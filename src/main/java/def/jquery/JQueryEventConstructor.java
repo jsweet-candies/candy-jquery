@@ -7,9 +7,9 @@ package def.jquery;
  */
 @jsweet.lang.Interface
 public abstract class JQueryEventConstructor extends def.js.Object {
-    native public JQueryEventObject apply(String name, Object eventProperties);
+    native public JQueryEventObject $apply(String name, Object eventProperties);
     public JQueryEventConstructor(String name, Object eventProperties){}
-    native public JQueryEventObject apply(String name);
+    native public JQueryEventObject $apply(String name);
     public JQueryEventConstructor(String name){}
     protected JQueryEventConstructor(){}
 }

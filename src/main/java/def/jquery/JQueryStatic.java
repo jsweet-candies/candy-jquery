@@ -134,55 +134,55 @@ public abstract class JQueryStatic extends def.js.Object {
      * @param selector A string containing a selector expression
      * @param context A DOM Element, Document, or jQuery to use as context
      */
-    native public JQuery apply(String selector, Element context);
+    native public JQuery $apply(String selector, Element context);
     /**
      * Accepts a string containing a CSS selector which is then used to match a set of elements.
      *
      * @param element A DOM element to wrap in a jQuery object.
      */
-    native public JQuery apply(Element element);
+    native public JQuery $apply(Element element);
     /**
      * Accepts a string containing a CSS selector which is then used to match a set of elements.
      *
      * @param elementArray An array containing a set of DOM elements to wrap in a jQuery object.
      */
-    native public JQuery apply(Element[] elementArray);
+    native public JQuery $apply(Element[] elementArray);
     /**
      * Binds a function to be executed when the DOM has finished loading.
      *
      * @param callback A function to execute after the DOM is ready.
      */
-    native public JQuery apply(java.util.function.Function<JQueryStatic,Object> callback);
+    native public JQuery $apply(java.util.function.Function<JQueryStatic,Object> callback);
     /**
      * Accepts a string containing a CSS selector which is then used to match a set of elements.
      *
      * @param object A plain object to wrap in a jQuery object.
      */
-    native public JQuery apply(java.lang.Object object);
+    native public JQuery $apply(java.lang.Object object);
     /**
      * Accepts a string containing a CSS selector which is then used to match a set of elements.
      *
      * @param object An existing jQuery object to clone.
      */
-    native public JQuery apply(JQuery object);
+    native public JQuery $apply(JQuery object);
     /**
      * Specify a function to execute when the DOM is fully loaded.
      */
-    native public JQuery apply();
+    native public JQuery $apply();
     /**
      * Creates DOM elements on the fly from the provided string of raw HTML.
      *
      * @param html A string of HTML to create on the fly. Note that this parses HTML, not XML.
      * @param ownerDocument A document in which the new elements will be created.
      */
-    native public JQuery apply(String html, Document ownerDocument);
+    native public JQuery $apply(String html, Document ownerDocument);
     /**
      * Creates DOM elements on the fly from the provided string of raw HTML.
      *
      * @param html A string defining a single, standalone, HTML element (e.g. <div/> or <div></div>).
      * @param attributes An object of attributes, events, and methods to call on the newly-created element.
      */
-    native public JQuery apply(String html, Object attributes);
+    native public JQuery $apply(String html, Object attributes);
     /**
      * Relinquish jQuery's control of the $ variable.
      *
@@ -621,7 +621,7 @@ public abstract class JQueryStatic extends def.js.Object {
      * @param selector A string containing a selector expression
      * @param context A DOM Element, Document, or jQuery to use as context
      */
-    native public JQuery apply(String selector);
+    native public JQuery $apply(String selector);
     /**
      * Relinquish jQuery's control of the $ variable.
      *
@@ -717,7 +717,7 @@ public abstract class JQueryStatic extends def.js.Object {
      *
      * @param callback A function to execute after the DOM is ready.
      */
-    native public JQuery apply(java.util.function.Supplier<Object> callback);
+    native public JQuery $apply(java.util.function.Supplier<Object> callback);
     /**
      * Finds the elements of an array which satisfy a filter function. The original array is not affected.
      *
@@ -810,7 +810,7 @@ public abstract class JQueryStatic extends def.js.Object {
      * @param selector A string containing a selector expression
      * @param context A DOM Element, Document, or jQuery to use as context
      */
-    native public JQuery apply(String selector, JQuery context);
+    native public JQuery $apply(String selector, JQuery context);
     /**
      * Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.
      *

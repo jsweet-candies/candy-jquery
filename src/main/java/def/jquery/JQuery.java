@@ -1553,7 +1553,7 @@ public abstract class JQuery extends def.js.Object implements Iterable<HTMLEleme
      * 
      * @param func A function to execute for each matched element.
      */
-    native public JQuery each(java.util.function.BiFunction<Double,Element,Object> func);
+    native public JQuery each(java.util.function.BiFunction<Integer,Element,Object> func);
     /**
      * Retrieve one of the elements matched by the jQuery object.
      * 

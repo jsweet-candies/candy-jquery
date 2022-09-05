@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jsweet.v3.candies</groupId>
 	<artifactId>jquery</artifactId>
-	<version>1.10.0-20200915</version>
+	<version>1.10.0-20220903</version>
 	<properties>
-		<jsweet.transpiler.version>3.0.0-SNAPSHOT</jsweet.transpiler.version>
-		<jsweet.core.version>6.0.0</jsweet.core.version>
+		<jsweet.transpiler.version>3.2.0-SNAPSHOT</jsweet.transpiler.version>
+		<jsweet.core.version>6.3.1</jsweet.core.version>
 
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
@@ -44,7 +44,7 @@
 	</pluginRepositories>
 	<dependencies>
 		<dependency>
-			<groupId>org.jsweet.v3</groupId>
+			<groupId>org.jsweet</groupId>
 			<artifactId>jsweet-core</artifactId>
 			<version>${jsweet.core.version}</version>
 		</dependency>
@@ -81,6 +81,7 @@
 				<configuration>
 					<verbose>true</verbose>
 					<bundle>true</bundle>
+					<module>none</module>
 					<tsOut>src/main/resources/META-INF/resources/typings/${project.artifactId}/${project.version}</tsOut>
 					<targetVersion>ES6</targetVersion>
 				</configuration>
@@ -115,7 +116,7 @@
 								<mkdir dir="dist/"></mkdir>
 
 								<copy
-									file="src/main/resources/src/typings/${project.artifactId}/${project.version}/bundle.d.ts"
+									file="src/main/resources/META-INF/resources/typings/${project.artifactId}/${project.version}/bundle.d.ts"
 									tofile="dist/${project.artifactId}.d.ts" verbose="true"
 									failonerror="false" />
 							</target>
